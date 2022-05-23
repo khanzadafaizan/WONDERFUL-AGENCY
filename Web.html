@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>My First Website</title>
+</head> 
+
+<!-- CSS Area-->
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial; 
+	
+}
+ body{
+ 	
+ }
+
+	/*Header Style*/
+.hd{
+          background: linear-gradient(to bottom right, #2396D3, #013688);
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+
+}	
+
+       h1{
+         	font-size: 3em;
+         }
+
+         h2{
+         	font-size: 2em;
+         }
+          
+          h3{
+         	font-size: 1.5em;
+         }
+
+         /*Nav Style*/
+
+         .menu{
+                  width: 100%;
+         	background-color:#6C5878;
+         	height: 40px;
+
+         }
+
+         .menu ul{
+         	text-align: center;
+         }
+
+         .menu ul li{
+         	list-style: none;
+         	display: inline;
+         }
+
+         .menu ul li a{
+         	text-decoration: none;
+             display: inline-block;
+             line-height: 40px;
+             padding: 0px 150px 0px 20px;
+             color: #fff;
+
+         }
+
+
+         /*Image1 Style*/
+
+         .image1{
+         	width: 10px;
+         	height: 1000px;
+         }
+
+         /*Services Styyle*/
+
+         .Services{
+         	width: 100%;
+         	background-color: hsl(0, 0%, 95%);
+         	padding-top:100px ;
+         	padding-bottom: 100px;
+         	text-align: center;
+         	background-color: whitesmoke;
+
+         }
+
+         .col{
+         	width: 90%;
+         	margin: auto;
+         	padding-top: 50px;
+         }
+         .Services-col{
+              
+         	width: 33.33%;
+         	float: left;
+         	padding: 10px 30px 10px 30px;
+         }
+
+         Services-col img{
+         	width: 80px;
+         	max-width: 100%;
+         }
+         .col::after{
+             clear: both;
+             display: table;
+             content: "";
+         }
+
+         #SM{
+         	margin-top: 05%;
+         }
+
+         .Services-contant{
+         	margin-top: 05%;
+         }
+
+         /*About Us Style*/
+
+         #AB{
+         	padding-top: 100px;
+         	padding-bottom: 100px;
+         	text-align: center;
+         	background-image: url(Gallery/bg.jpg);
+         	background-attachment: fixed;
+         	background-repeat: no-repeat;
+         	background-size: cover;
+         	background-position: center;
+         	color: #fff;
+         	width: 100%;
+         	
+         }
+           .a-contant{
+           	color: #fff;
+           	margin-top: 03%;
+           	background-color: rgb(0,0,0,0.5);
+           	width: 80%;
+           	margin-left: 10%;
+           }
+
+           .button{
+           	margin-top: 03%;
+           	width: 8%;
+           	padding: 0.50%;
+           	background-color: transparent;
+           	color: #fff;
+             border-radius: 25px;
+
+           }
+
+
+           .Our-Team{
+             display:flex;
+             text-align: center;
+             margin-top: 02%;
+             justify-content: space-between;           }
+         
+
+         .team{
+             width: 30%;          
+             box-shadow: 2px 2px 2px 2px gray;
+         }
+         
+          .m1{
+          	width: 20%;
+          	box-shadow: 2px 2px 2px 2px gray;
+          	margin-top: 02%;
+          	border-radius: 100%;
+          }
+
+          .m1-d{
+          	font-size: 20px;
+          	margin-top: 02%;
+          }
+
+          .team-dsub{
+             padding-top: 02%;  
+          }
+         
+          .team-dsub li{
+            padding-top: 02%;
+            list-style-type: none; 
+          } 
+
+
+          #TD{
+          	text-align: center;
+          	margin-top: 2%;
+          	margin-bottom: 2%;
+          }
+
+          #LF{
+          	margin-top: 0.50%;
+          		padding-top: 05%;
+          	text-align: center;
+          	 font-size: 50px;
+          }
+
+
+          .form-area{
+          	display: flex;
+          	width: 100%;
+          	text-align: center;
+            height: 40vh;
+          	
+          }
+
+          .form-col{
+          	padding-top: 5%;
+          	width: 45%;
+
+          }
+
+          .form-label{
+           margin-right: 50%;
+
+          }
+
+          .form-col input{
+           width: 60%;
+           height: 05vh;
+           padding-left: 02%;
+           	margin-bottom: 05%;
+          }
+
+
+          .Reset{
+          	margin-top: 05%;
+          	width: 10%;
+          	height: 05vh;
+          	margin-right: 02%	;
+          }
+
+
+         .textarea{
+         	margin-left: 08%;
+         	margin-bottom: 05%;
+             width: 45%;
+             padding-top: 5%;
+
+         }
+     .textarea textarea{
+          width: 85%;
+          height: 90%;
+
+     }
+
+     
+      
+      .Sgin-up{
+     	text-decoration: none;
+     	color: #blue;
+     	text-align: center;
+          
+     }
+
+      .Sgin-up button{
+     	text-decoration: none;
+     	text-align: center;
+     	width: 15%;
+     	border-radius: 25px;
+     	background-color: white;
+          
+     }
+
+     .Sgin-up a{
+     	text-decoration: none;
+     	font-size: 20px;
+     	text-align: center;
+     	padding: 02%;
+     	color: black;
+     }
+
+     .footer{
+     	width: 100%;
+     	height: 20vh;
+     	background-color: black;
+     	margin-top: 02%;
+     }  
+
+     .footer{
+     	color: #fff;
+     }       
+         
+</style>
+<body>
+<!-- header Are -->
+
+<div class="hd">
+	<p id="TOP"></p>
+	<h1>WONDERFUL AGENCY</h1>
+	<h3>Leading Web Solution Agency</h3>
+	<h5>On Planet</h5>
+
+</div>
+
+<nav class="menu">
+<ul>
+	<li><a href="#SM">Service</a></li>
+	<li><a href="#AB">About Us</a></li>
+	<li><a href="#TD">Team</a></li>
+	<li><a href="#LF">Form</a></li>
+                           </ul>
+</nav>
+	<div class="Services">
+		<h1>Services</h1>
+		<div class="col">
+         <div class="Services-col">
+		<img src="gallery/pic1.jpg">
+		<h3 id="SM">Service Monitoring</h3>
+      
+	   <p class="Services-contant">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	      
+</div>
+       <div class="Services-col">
+		<img src="gallery/pic2.jpg">
+		<h3 id="SM" >Service Research</h3>
+      
+	   <p class="Services-contant">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	      
+</div>
+	  <div class="Services-col">
+		<img src="gallery/pic3.jpg">
+		<h3 id="SM" >Service Billing</h3>
+      
+	   <p class="Services-contant">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	      
+         </div>
+	      </div>
+
+
+	</div>
+	<div id="AB">
+		<h1>About Us</h1>
+		<p class="a-contant">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+		<button class="button">Read --></button>
+
+	</div>
+         
+         <h1 id="TD">Team Details</h1>
+		<div class="Our-Team" >
+                 
+
+			<div class="team">
+             <img class="m1" src="Gallery/member1.jpg">
+             <h1 class="m1-d">Awais Khan</h1>
+                 <ul class="team-dsub">
+                 	<li>Details</li>
+                 	<li>Department CMS</li>
+                    <li>job title Reviewer</li>
+                 </ul>                   
+              </div>
+
+              <div class="team"> 
+             <img class="m1" src="Gallery/member1.jpg">             
+             	<h1 class="m1-d">Awais Khan</h1>
+                 <ul class="team-dsub">
+                 	<li>Details</li>
+                 	<li>Department CMS</li>
+                    <li>job title Reviewer</li>
+                 </ul>
+             </div>
+        
+             <div class="team">
+
+
+             <img class="m1" src="Gallery/member1.jpg">
+             <h1 class="m1-d">Awais Khan</h1>
+                 <ul class="team-dsub">
+                 	<li>Details</li>
+                 	<li>Department CMS</li>
+                    <li>job title Reviewer</li>
+                 </ul>
+              </div>
+			
+		</div>
+           
+           <h1 id="LF">LOGIN</h1>
+
+           <div class="form-area">
+             
+           <div class="form-col">
+           		<label class="form-label">Username</label><br>
+             	 <input  type="text" placeholder="Username"><br>
+           	    <label class="form-label" >Password</label><br>
+            	 <input type="text" placeholder="password"><br>
+                  <button class="Reset">Reset</button>
+                  <button class="Reset">Save</button>
+
+            	
+           	 </div>
+                   
+
+           	<div class="textarea">
+           		<label>Message</label>
+           		<textarea>Cover Latter....</textarea>
+           	</div>
+
+          </div>
+
+          <div class="Sgin-up"><button><a href="form.html">SGIN UP</a></button></div>
+
+
+           <div class="footer">
+           	  <p>Contact</p>
+           	  <p>+457842652366</p>
+
+           	  <p>Email</p>
+           	  <p>faizan.khanzada4@gamil.com</p>
+              <a href="#TOP">GO to Top</a> 
+
+           </div>
+
+</body>
+</html>
